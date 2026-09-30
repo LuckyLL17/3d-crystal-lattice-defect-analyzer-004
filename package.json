@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.1.0",
   "type": "module",
-  "scripts": {"dev":"vite","build":"tsc -b && vite build","preview":"vite preview"},
+  "scripts": {"dev":"vite","build":"tsc -b && vite build","preview":"vite preview","test:presets":"tsc src/presets.ts --outDir scripts --module esnext --target es2022 --moduleResolution bundler --skipLibCheck --ignoreConfig && node scripts/test-presets.mjs"},
   "dependencies": {
     "@react-three/drei":"latest",
     "@react-three/fiber":"latest",
